@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+      maximum-scale=5"
+    />
+
+    <link rel="icon" href="devchallenges.png" />
+    <link rel='stylesheet' href="css/style.min.css" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    <title>Checkout Page</title>
+  </head>
+  <body>
+    <div class="wrapper">
+    <main class="main">
+      <div class="container">
+        <h1>Checkout</h1>
+        <form action="post" class="form" novalidate>
+          <div class="form__container">
+            <section class="form__section">
+              <h2>Contact information</h2>
+              <div class="form__group">
+                <label for="email" class="form__label">E-mail</label>
+                <input type="email" name="email" class="form__control" placeholder="Enter your email...">
+                <span class="form__icon material-icons">
+                  email
+                </span>
+              </div>
+              <div class="form__group">
+                <label for="phone" class="form__label">Phone</label>
+                <input type="tel" name="phone" class="form__control" placeholder="Enter your phone..."  pattern="8[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+                <span class="form__icon material-icons">
+                  phone
+                </span>
+              </div>
+            </section>
+            <section class="form__section">
+              <h2>Shipping address</h2>
+              <div class="form__group">
+                <label for="fullname" class="form__label">Full name</label>
+                <input type="text" name="fullname" class="form__control" placeholder="Enter your fullname..." >
+                <span class="form__icon material-icons">
+                  account_circle
+                </span>
+              </div>
+              <div class="form__group">
+                <label for="address" class="form__label">Address</label>
+                <input type="text" name="address" class="form__control" placeholder="Your address..." >
+                <span class="form__icon material-icons">
+                  home
+                </span>
+              </div>
+              <div class="form__group">
+                <label for="city" class="form__label">City</label>
+                <input type="text" name="city" class="form__control" placeholder="Your city..." >
+                <span class="form__icon material-icons">
+                  location_city
+                </span>
+              </div>
+              <div class="form__union">
+                <div class="form__group form__group_dropdown form__union__item">
+                  <label for="country" class="form__label">Country</label>
+                  <select name="country" class="form__control form__control_dropdown">
+                    <option value="0" selected disabled>Your country</option>
+                    <option value="1">Germany</option>
+                    <option value="2">Great Britain</option>
+                    <option value="3">Russia Federation</option>
+                  </select>
+                  <span class="form__icon material-icons">
+                    public
+                  </span>
+                </div>
+                <div class="form__group form__union__item">
+                  <label for="postal" class="form__label">Postal code</label>
+                  <input type="text" name="postal" class="form__control" placeholder="Your postal code...">
+                  <span class="form__icon material-icons">
+                    markunread_mailbox
+                  </span>
+                </div>
+              </div>
+            </section>
+            <label class="custom-checkbox">
+              Save this information for next time
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <input type="submit" class="form__submit" value="Continue">
+          </div>
+          <div class="form__basket">
+            <div class="basket">
+              <div class="basket__item">
+                <div class="basket__item__photo">
+                  <img src="./img/photo1.png" alt="photo1">
+                </div>
+                <div class="basket__col">
+                  <div class="basket__info">
+                    <span class="basket__info__title">Vintage Backbag</span>
+                    <br>
+                    <span class="basket__info__price">$54.99</span>
+                    &nbsp;
+                    <del>$94.99</del>
+                  </div>
+                  <div class="basket__control">
+                    <span class="basket__control__btn">-</span>
+                    <span>1</span>
+                    <span class="basket__control__btn ">+</span>
+                  </div>
+                </div>
+              </div>
+              <div class="basket__item">
+                <div class="basket__item__photo">
+                  <img src="./img/photo2.png" alt="photo2">
+                </div>
+                <div class="basket__col">
+                <div class="basket__info">
+                  <span class="basket__info__title">Levi Shoes</span>
+                  <br>
+                  <span class="basket__info__price">$74.99</span>
+                  &nbsp;
+                  <del>$124.99</del>
+                </div>
+                <div class="basket__control">
+                  <span class="basket__control__btn">-</span>
+                  <span>1</span>
+                  <span class="basket__control__btn">+</span>
+                </div>
+              </div>
+              </div>
+              <table class="basket__table">
+                <tbody>
+                  <tr>
+                    <td>Shipping</td>
+                    <td>$19</td>
+                  </tr>
+                  <tr>
+                    <td>Total</td>
+                    <td>$148.98</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+      <p>
+        created by
+        <b>ChigorinDenis</b> 
+        - 
+        devChallenges.io
+      </p>
+    </footer>
+  </div>
+  </body>
+  <script src="./js/script.js"></script>
+</html>
